@@ -2305,3 +2305,16 @@ a:hover.back-to-top {
 	font-weight: bold; /* Make it bold */
 	color: #333; /* Adjust color as needed */
 }
+
+
+
+.rounded-circle {
+	width: 150px; /* Adjust the size as needed */
+	height: 150px; /* Adjust the size as needed */
+	object-fit: cover; /* Crop the image to fit the circle */
+	margin-bottom: 10px; /* Space between image and text */
+}
+.profile-card {
+	text-align: center; /* Center align text */
+	margin-bottom: 20px; /* Space between cards */
+}
