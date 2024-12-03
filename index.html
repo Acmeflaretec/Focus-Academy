@@ -67,7 +67,9 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#about-us">ABOUT US</a>
                 </li>
-                
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="article-details.html">BOD</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">COURSE</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -90,6 +92,7 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">CONTACT</a>
                 </li>
+               
             </ul>
            
         </div>
@@ -222,6 +225,7 @@
                     <h2>Who We Are</h2>
                     <p style="text-align: justify;">We are passionate educators committed to helping learners achieve fluency in the German language. Our team consists of experienced instructors who utilize innovative teaching methods to ensure an engaging and effective learning experience. Our programs are designed to not only teach the language but also immerse students in the rich culture of German-speaking countries. </p>
                     <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">SEE MORE</a>
+                    <a class="btn-solid-reg " href="article-details.html">Board of Directors</a>
                 </div> <!-- end of text-container -->
             </div> <!-- end of col -->
             <div class="col-lg-6">
@@ -235,14 +239,10 @@
 
   
 <div class="container mt-5" >
-    <h2 class="text-center mb-4">Our Instructors</h2> <!-- Heading added here -->
+    <h2 class="text-center mb-4">Our Instructor</h2> <!-- Heading added here -->
     <div class="row" style="margin-top: 70px; margin-bottom: 70px;">
-        <div class="col-md-6 profile-card">
-            <img style="width: 145px;" src="/images/WhatsApp Image 2024-10-28 at 00.23.57.jpeg" alt="Mr Binoy Thankachan" class="rounded-circle">
-            <h5>Mr Binoy Thankachan</h5>
-            <p style="text-align: justify;">Mr Binoy is a dedicated trainer who focuses on making the German language accessible and enjoyable for all learners. He is committed to providing a supportive learning environment where students can thrive.</p>
-        </div>
-        <div class="col-md-6 profile-card">
+        
+        <div class="col-md-12 profile-card">
             <img src="/images/WhatsApp Image 2024-10-27 at 15.15.20.jpeg" alt="Mr Simon Havemann" class="rounded-circle">
             <h5>Mr Simon Havemann</h5>
             <p style="text-align: justify;">Mr Simon is a German trainer with a passion for teaching. He aims to empower students with the skills they need to communicate effectively in German while fostering an appreciation for the language and culture.</p>
@@ -821,65 +821,93 @@
 -->
 
     <!-- Contact -->
-    <div id="contact" class="form-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Contact Details</h2>
-                        <p>For registration questions please get in touch using the contact details below. For any questions use the form.</p>
-                        <h3>Main Office Location</h3>
-                        <ul class="list-unstyled li-space-lg">
-                          <!--  <li class="media">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="media-body"></div>
-                            </li> -->
-                            <li class="media">
-                                <i class="fas fa-mobile-alt"></i>
-                                <div class="media-body">+9544145220, &nbsp;&nbsp;<i class="fas fa-mobile-alt"></i>&nbsp; +4915510272927</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-envelope"></i>
-                                <div class="media-body"><a class="light-gray" href="mailto:linosdavid@gmail.com">linosdavid@gmail.com</a> </div>
-                            </li>
-                            <a href="https://www.facebook.com/profile.php?id=61567115490122&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
+<div id="contact" class="form-3">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Details Section -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <h2>Contact Details</h2>
+                    <p>For registration questions, please get in touch using the contact details below. For any questions, use the form.</p>
+                    
+                    <!-- German Address -->
+                    <h3>German Address</h3>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="media-body">Petersstraße 27, Worms, Pin 67547</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="media-body">+4915510272927</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-envelope"></i>
+                            <div class="media-body"><a class="light-gray" href="mailto:focusacademygermany@gmail.com">focusacademygermany@gmail.com</a></div>
+                        </li>
+                    </ul>
 
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
+                    <!-- Indian Address -->
+                    <h3>Indian Address</h3>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="media-body">
+                                The Great Education Initiative <br>
+                                Genesis German Language College <br>
+                                Door No. 121, Apparkulam, Kizhe <br>
+                                Kaduvetti P.O., Thirunelveli Dist., Tamil Nadu, India
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="media-body">+9544145220</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-envelope"></i>
+                            <div class="media-body"><a class="light-gray" href="mailto:liveingermany24@gmail.com">liveingermany24@gmail.com</a></div>
+                        </li>
+                    </ul>
+                    
+                    <!-- Social Media -->
+                    <a href="https://www.facebook.com/profile.php?id=61567115490122&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-3 -->
-    <!-- end of contact -->
+            <!-- Contact Form Section -->
+            <div class="col-lg-6">
+                <!-- Contact Form -->
+                <form id="contactForm" data-toggle="validator" data-focus="false">
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="cname" required>
+                        <label class="label-control" for="cname">Name</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control-input" id="cemail" required>
+                        <label class="label-control" for="cemail">Email</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                        <label class="label-control" for="cmessage">Your message</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                    </div>
+                    <div class="form-message">
+                        <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                    </div>
+                </form>
+                <!-- end of contact form -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of form-3 -->
+<!-- end of contact -->
+
 
 
     <!-- Footer -->

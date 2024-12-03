@@ -27,6 +27,47 @@
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <style>
+        .image-container-small img {
+    width: 100%; /* Ensures the image fits the container */
+    height: 350px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures the image scales correctly without distortion */
+    border-radius: 10px; /* Adds rounded corners for a polished look */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.image-container-small img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.text-container h4 {
+    font-size: 1.25rem; /* Slightly larger heading */
+    color: #343a40; /* Neutral color for better readability */
+    margin-top: 15px; /* Adds space above the heading */
+}
+
+.text-container p {
+    font-size: 1rem; /* Makes the paragraph text consistent */
+    color: #6c757d; /* Softer text color for a balanced look */
+    margin-top: 10px;
+}
+
+.text-center {
+    padding: 15px; /* Adds some padding around each card */
+    background: #f8f9fa; /* Light background for a clean look */
+    border-radius: 10px; /* Matches the image border radius */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Card shadow for structure */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-center:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+    </style>
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -51,7 +92,7 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Corso</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="index.html"><img style=" width: 150px; height: 80px;" src="/images/Logo.png" alt="alternative"></a> 
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,40 +107,36 @@
                     <a class="nav-link page-scroll" href="index.html#register">REGISTER <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#description">DETAILS</a>
+                    <a class="nav-link page-scroll" href="index.html#about-us">ABOUT US</a>
                 </li>
-
-                <!-- Dropdown Menu -->          
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="article-details.html">BOD</a>
+                </li>
+                
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="index.html#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DATE</a>
+                    <a class="nav-link dropdown-toggle page-scroll" href="index.html#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">COURSE</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE DETAILS</span></a>
+                        <a class="nav-link page-scroll" href="index.html#details"><span style="color: black;" class="item-text">DETAILS</span></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                        <a class="nav-link page-scroll" href="index.html#features"><span style="color: black;" class="item-text">FEATURES</span></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                        <a class="nav-link page-scroll" href="index.html#structure"><span style="color: black;" class="item-text">STRUCTURES</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="nav-link page-scroll" href="index.html#material"><span style="color: black;" class="item-text">MATERIALS</span></a>
                     </div>
                 </li>
-                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html#opportunities">OPPURTUNITIES</a>
+                </li>
+
+                
 
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="index.html#contact">CONTACT</a>
                 </li>
             </ul>
-            <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-twitter fa-stack-1x"></i>
-                    </a>
-                </span>
-            </span>
+           
         </div>
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
@@ -110,7 +147,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="white">Longer Article Title Should Definitely Go Here</h1>
+                    <h1 class="white">Board of Directors </h1>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -118,223 +155,187 @@
     <!-- end of header -->
 
 
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Longer Article Title Should Go Here</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
+   
 
+<!-- Board of Directors Content -->
+<div class="ex-basic-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Section Header -->
+                <div class="text-container">
+                    <h3>Meet Our Dedicated Board of Directors</h3>
+                    <p>
+                        Our esteemed board of directors is passionately dedicated to empowering individuals with the foreign language skills essential for thriving in international career landscapes. They bring years of experience, vision, and a shared commitment to building brighter futures.
+                    </p>
+                </div> <!-- end of text-container -->
 
-    <!-- Privacy Content -->
-    <div class="ex-basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="image-container-large">
-                        <img class="img-fluid" src="images/article-details-large.jpg" alt="alternative">
-                    </div> <!-- end of image-container-large -->
-                    <div class="text-container">
-                        <h3>Business Analysis And Reporting Tools</h3>
-                        <p>Corso also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser), and information obtained from cookies. For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page, and the web page(s) you access (as applicable).</p>
-                        <p>When you first register for a Corso account, and when you use the Services, we collect some <a href="#your-link">Personal Information</a> about you such as:</p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="list-unstyled li-space-lg">
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">The geographic area where you use your computer and mobile devices should be the same with the one of your</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">Your full name, username, and email address and other contact details should be provided in the contact forms</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">A unique Corso user ID (an alphanumeric string) which is assigned to you upon registration should always be at front</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">Every system is backuped regularly and it will not fail</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">Your IP Address and, when applicable, timestamp related to your consent and confirmation of consent but please make</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">Other information submitted by you or your organizational representatives via various methods and practiced techniques</div>
-                                    </li>
-                                </ul>
-                            </div> <!-- end of col -->
+                <!-- Director Profiles with Images -->
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="image-container-small">
+                            <img class="img-fluid" src="images/devadhanam.jpg" alt="Mr. Devadhanam">
+                        </div>
+                        <h4>Mr. Devadhanam</h4>
+                        <p>
+                            A visionary leader with extensive experience in educational initiatives, Mr. Devadhanam plays a crucial role in designing innovative programs that foster global career opportunities. His strategic insights and unwavering dedication drive our mission forward.
+                        </p>
+                    </div> <!-- end of col -->
+                
+                    <div class="col-md-4 text-center">
+                        <div class="image-container-small">
+                            <img class="img-fluid" src="images/Binoy Thankchan.jpeg" alt="Mr. Binoy Thankchan">
+                        </div>
+                        <h4>Mr. Binoy Thankchan</h4>
+                        <p>
+                            With a deep passion for education and empowerment, Mr. Binoy Thankchan spearheads initiatives to enhance language proficiency and skill development. His contributions ensure learners are equipped for success in competitive global environments.
+                        </p>
+                    </div> <!-- end of col -->
+                
+                    <div class="col-md-4 text-center">
+                        <div class="image-container-small">
+                            <img class="img-fluid" src="images/Linos David.jpg" alt="Mr. Linos David">
+                        </div>
+                        <h4>Mr. Linos David</h4>
+                        <p>
+                            An advocate for excellence in education, Mr. Linos David brings unparalleled expertise in program development and execution. His leadership ensures that every initiative meets the highest standards of quality and effectiveness.
+                        </p>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                
 
-                            <div class="col-md-6">
-                                <ul class="list-unstyled li-space-lg">
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">Your billing address and any necessary other information to complete any financial transaction, and when making purchases through the Services, we may also collect your credit card or PayPal information or any other sensitive</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">User generated content (such as messages, posts, comments, pages, profiles, images, feeds or communications exchanged on the Supported Platforms that can be used)</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">Images or other files that you may publish via our Services</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">Information (such as messages, posts, comments, pages, profiles, images) we may receive relating to communications you send us, such as queries or comments concerning</div>
-                                    </li>
-                                </ul>
-                            </div> <!-- end of col -->
-                        </div> <!-- end of row -->
-                    </div> <!-- end of text-container-->
-                    
-                    <div class="text-container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3>Improving Product Strategy</h3>
-                                <p>Corso also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser), and information obtained.</p>
-                                <p>For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page.</p>
-                                <p>The best way to promoted digital products is to provide potential users with free versions throughout the product's life.</p>
-                            </div> <!-- end of col -->
-                            <div class="col-md-6">
-                                <div class="image-container-small">
-                                    <img class="img-fluid" src="images/article-details-small.jpg" alt="alternative">
-                                </div> <!-- end of image-container-small -->
-                            </div> <!-- end of col -->
-                        </div> <!-- end of row -->
-                    </div> <!-- end of text-container -->
+                <!-- Program Details Section -->
+                <div class="text-container">
+                    <h3>Our German Language Program</h3>
+                    <p>
+                        Together, our board of directors has meticulously designed and implemented the German Language Program, an innovative initiative tailored to equip learners with the proficiency needed to excel in global career landscapes. The program focuses on:
+                    </p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li><i class="fas fa-check-circle"></i> Comprehensive language training for career-oriented individuals</li>
+                        <li><i class="fas fa-check-circle"></i> Practical applications to enhance real-world communication skills</li>
+                        <li><i class="fas fa-check-circle"></i> Preparing students for professional and academic success abroad</li>
+                    </ul>
+                    <p>
+                        By fostering language excellence and cultural awareness, we strive to create opportunities that transform lives and pave the way for international success.
+                    </p>
+                </div> <!-- end of text-container -->
 
-                    <div class="text-container dark">
-                        <p class="testimonial-text">Corso is a HTML landing page template tool. By its nature, Services enable our customers to promote their products and services integrate with hundreds of business applications that they already use, all in one place. Services help our customers promote their products and services, marketing and advertising; engaging audiences; scheduling and publishing.</p>
-                    </div> <!-- end of text container -->
-
-                    <div class="text-container last">
-                        <h3>Project Evaluation And Predictions</h3>
-					    <p>By using any of the Services, or submitting or collecting any Personal Information via the Services, you consent to the collection, transfer, storage disclosure, and use of your Personal Information in the manner set out in this Privacy Policy. If you do not consent to the use of your Personal Information in these ways, please stop using the Services. Information in the manner set out in this Privacy Policy. If you do not consent to the use of your Personal Information in these ways, please stop using the Services.</p>
-                    </div> <!-- end of text-container -->
+                <!-- Call to Action -->
+                <div class="text-container last">
                     <a class="btn-solid-reg" href="index.html">BACK</a>
-                </div> <!-- end of col-->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-2 -->
-    <!-- end of privacy content -->
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of ex-basic-2 -->
+<!-- end of Board of Directors Content -->
 
 
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Longer Article Title Should Go Here</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
 
     
-    <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer-col first">
-                        <h5>About Corso</h5>
-                        <p class="p-small">We're passionate about teaching people how to do better SEO for their online presence</p>
+    
+   <!-- Contact -->
+<div id="contact" class="form-3">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Details Section -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <h2>Contact Details</h2>
+                    <p>For registration questions, please get in touch using the contact details below. For any questions, use the form.</p>
+                    
+                    <!-- German Address -->
+                    <h3>German Address</h3>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="media-body">Petersstraße 27, Worms, Pin 67547</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="media-body">+4915510272927</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-envelope"></i>
+                            <div class="media-body"><a class="light-gray" href="mailto:focusacademygermany@gmail.com">focusacademygermany@gmail.com</a></div>
+                        </li>
+                    </ul>
+
+                    <!-- Indian Address -->
+                    <h3>Indian Address</h3>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="media-body">
+                                The Great Education Initiative <br>
+                                Genesis German Language College <br>
+                                Door No. 121, Apparkulam, Kizhe <br>
+                                Kaduvetti P.O., Thirunelveli Dist., Tamil Nadu, India
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="media-body">+9544145220</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-envelope"></i>
+                            <div class="media-body"><a class="light-gray" href="mailto:liveingermany24@gmail.com">liveingermany24@gmail.com</a></div>
+                        </li>
+                    </ul>
+                    
+                    <!-- Social Media -->
+                    <a href="https://www.facebook.com/profile.php?id=61567115490122&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+
+            <!-- Contact Form Section -->
+            <div class="col-lg-6">
+                <!-- Contact Form -->
+                <form id="contactForm" data-toggle="validator" data-focus="false">
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="cname" required>
+                        <label class="label-control" for="cname">Name</label>
+                        <div class="help-block with-errors"></div>
                     </div>
-                </div> <!-- end of col -->
-                <div class="col-md-3">
-                    <div class="footer-col second">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="terms-conditions.html">Terms & Conditions</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="privacy-policy.html">Privacy Policy</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="article-details.html">Article Details</a></div>
-                            </li>
-                        </ul>
+                    <div class="form-group">
+                        <input type="email" class="form-control-input" id="cemail" required>
+                        <label class="label-control" for="cemail">Email</label>
+                        <div class="help-block with-errors"></div>
                     </div>
-                </div> <!-- end of col -->
-                <div class="col-md-3">
-                    <div class="footer-col third">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="article-details.html">Article Details</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="terms-conditions.html">Terms & Conditions</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="privacy-policy.html">Privacy Policy</a></div>
-                            </li>
-                        </ul>
+                    <div class="form-group">
+                        <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                        <label class="label-control" for="cmessage">Your message</label>
+                        <div class="help-block with-errors"></div>
                     </div>
-                </div> <!-- end of col -->
-                <div class="col-md-3">
-                    <div class="footer-col fourth">
-                        <h5>Social Media</h5>
-                        <p class="p-small">For news & updates follow us</p>
-                        <a href="#your-link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#your-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#your-link">
-                            <i class="fab fa-pinterest-p"></i>
-                        </a>
-                        <a href="#your-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#your-link">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#your-link">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div> 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
+                    
+                    <div class="form-group">
+                        <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                    </div>
+                    <!-- <div class="form-message">
+                        <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                    </div> -->
+                </form>
+                <!-- end of contact form -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of form-3 -->
+<!-- end of contact -->
 
 
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights reserved</p>
-                    <p class="p-small">Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
+   <!-- Copyright -->
+   <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">Copyright © 2024 <a href="">Live in Germany</a> - All rights reserved </p>
+                <p class="p-small">Designed by <a href="https://www.acmeflare.in/" target="_blank">Acmeflare</a></p>
+                
+            </div> <!-- end of col -->
+        </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of copyright --> 
+<!-- end of copyright -->
     
     	
     <!-- Scripts -->
